@@ -59,12 +59,16 @@
   (reset! current_id_list2 (set [0 1]))
 )
 
+(defn s-replace-png
+  [s]
+  (clojure.string/replace s ".png" ""))
+
 ;; -------------------------
 ;; Page components
 
 (defn about-page []
    [:span.main
-    [:h1 "About example"]]) 
+    [:p1 "Divide is like an art thing that makes you go ooooooo. 'Cause it's all like got typography in it and cool little broken thingies. Probably a commentry on something I'd imagine."]]) 
 
 (defn image-compare []
   ;; Need to @ ref number_ids and id_list otherwise it's too lazy..
@@ -78,19 +82,19 @@
           [:div {:class "flex-container-row"}
             [:div {:class "flex-container-column"} 
               [:input {:type "image" :src (str "/images/2/" (nth divide.util/file_names2 @id1_)) :on-click on-divider-click2}]
-              [:h5 (nth divide.util/file_names2 @id1_)]]
+              [:h5 (s-replace-png (nth divide.util/file_names2 @id1_))]]
             [:div {:class "flex-container-column"}
               [:input {:type "image" :src (str "/images/2/" (nth divide.util/file_names2 @id2_)) :on-click on-divider-click2}]
-              [:h5 (nth divide.util/file_names2 @id2_)]]]])))
+              [:h5 (s-replace-png(nth divide.util/file_names2 @id2_))]]]])))
     (do
       [:span.main
       [:div {:class "flex-container-row"}
         [:div {:class "flex-container-column"} 
           [:input {:type "image" :src (str "/images/1/" (nth divide.util/file_names @id1_)) :on-click on-divider-click}]
-          [:h5 (nth divide.util/file_names @id1_)]]
+          [:h5 (s-replace-png(nth divide.util/file_names @id1_))]]
         [:div {:class "flex-container-column"}
           [:input {:type "image" :src (str "/images/1/" (nth divide.util/file_names @id2_)) :on-click on-divider-click}]
-          [:h5 (nth divide.util/file_names @id2_)]]]]))
+          [:h5 (s-replace-png (nth divide.util/file_names @id2_))]]]]))
 )
 
 (defn home-page []

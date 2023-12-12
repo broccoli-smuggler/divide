@@ -6056,3 +6056,39 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/divide/core
 Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
 [32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.409 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/divide/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.419 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/divide/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.39 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/divide/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/divide/core.cljs   line:97  column:17  ----[0m
+
+  [1mUse of undeclared Var divide.core/s-replace[0m
+
+  [36m 93[0m  [36m          [:input {:type "image" :src (str "/images/1/" (nth divide.util/file_names @id1_)) :on-click on-divider-click}][0m
+  [36m 94[0m  [36m          [:h5 (nth divide.util/file_names @id1_)]][0m
+  [36m 95[0m  [36m        [:div {:class "flex-container-column"}[0m
+  [36m 96[0m  [36m          [:input {:type "image" :src (str "/images/1/" (nth divide.util/file_names @id2_)) :on-click on-divider-click}][0m
+  [33m 97[0m  [1m          [:h5 (s-replace (nth divide.util/file_names @id2_) ".png" "")]]]]))[0m
+  [0m   [0m  [33m                ^--- Use of undeclared Var divide.core/s-replace[0m
+  [36m 98[0m  [36m)[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m(defn home-page [][0m
+  [36m101[0m  [36m  (fn [][0m
+  [36m102[0m  [36m    [:span.main[0m
+
+[36m----  Compiler Warning : Please see src/cljs/divide/core.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.429 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/divide/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.404 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/divide/core.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.376 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/divide/core.js

@@ -38,9 +38,13 @@ h3 {
   font-size: 1.5em
 }
 
+h5 {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
-  color: #09f;
+  color: rgb(87, 87, 87);
 }
 
 a:hover {
